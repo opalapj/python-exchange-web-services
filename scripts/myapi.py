@@ -74,6 +74,12 @@ def list_items(account: Account) -> None:
         print(item.subject, item.sender, item.datetime_received)
 
 
+def sign_into_account():
+    validate_custom_certificate()
+    credentials = provide_credentials()
+    return sign_into_account_using_configuration_object(credentials)
+
+
 def main():
     # show_logs()
     clear_cache()
