@@ -1,3 +1,5 @@
+# Setup and connecting
+
 - Use `logging`
 
   According to: https://ecederstrand.github.io/exchangelib/#troubleshooting
@@ -30,3 +32,11 @@
 - Add `credentials=Credentials(...)` param
 
   Note: empty strings work for username and password.
+
+# Caching Autodiscover results
+
+Use `shelve` built-in module.
+
+# Connect using cached server and account info
+
+Use `Configuration` object.
